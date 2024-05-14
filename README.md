@@ -6,7 +6,7 @@ ArkaSphere is a platform designed for social interaction and communication. It c
 
 ## What makes us stand out against other social media platforms?
 
-###We emphasize privacy, security, and user empowerment in our platform.
+### We emphasize privacy, security, and user empowerment in our platform.
 
 ## Features
 
