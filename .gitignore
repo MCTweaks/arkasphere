@@ -2,3 +2,4 @@
 /node_modules
 /frontend
 /src/proprietary
+.env
