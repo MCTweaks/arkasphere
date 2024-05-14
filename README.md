@@ -4,6 +4,10 @@
 
 ArkaSphere is a platform designed for social interaction and communication. It combines features from popular social media platforms like TikTok, Twitter, and Telegram, offering users a unique space to connect, share content, and engage with others.
 
+## What makes us stand out against other social media platforms?
+
+### We emphasize privacy, security, and user empowerment in our platform.
+
 ## Features
 
 - **Social Interaction**: Connect with friends, follow interesting users, and engage in conversations.
@@ -31,7 +35,3 @@ If you have any questions or suggestions regarding ArkaSphere, feel free to cont
 
 - [HetMasterTje's GitHub](https://github.com/HetMasterTje)
 - [MCTweaks' GitHub](https://github.com/MCTweaks)
-
-## What makes us stand out against other social media platforms?
-
-We emphasize privacy, security, and user empowerment in our platform.
