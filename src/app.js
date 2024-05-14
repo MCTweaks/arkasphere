@@ -7,9 +7,14 @@ app.use(express.json());
 app.use(express.static("frontend"))
 
 
-// Import the proprietary module
-const proprietary = require('./proprietary/proprietary.js');
-proprietary(app);
+// The Proprietary module is not required.
+try {
+    const proprietary = require('./proprietary/proprietary.js');
+    proprietary(app);
+} catch (error) {
+    console.error("Error loading proprietary module:", error);
+    // Handle the error gracefully, or just continue without it.
+}
 
 // Routes Import
 
