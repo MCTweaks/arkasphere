@@ -1,0 +1,19 @@
+{
+  "name": "arkasphere",
+  "version": "0.0.1",
+  "description": "ArkaSphere is an open-source project providing the codebase for a dynamic digital space where users can gather, interact, and communicate.",
+  "main": "ark.js",
+  "scripts": {
+    "dev": "nodemon src/ark.js",
+    "start": "node src/ark.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
