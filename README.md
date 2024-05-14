@@ -11,19 +11,7 @@ ArkaSphere is a platform designed for social interaction and communication. It c
 - **Real-time Messaging**: Communicate with friends and followers through instant messaging.
 - **Customizable Profiles**: Personalize your profile with photos, bio, and more.
 - **Explore**: Discover new content, trends, and communities on ArkaSphere.
-
-## Getting Started
-
-To get started with ArkaSphere, follow these steps:
-
-1. **Installation**: [Insert installation instructions here if applicable]
-
-2. **Sign Up**: Create an account on ArkaSphere to start exploring and connecting with others.
-
-3. **Explore**: Discover new content, follow interesting users, and engage in conversations.
-
-4. **Share**: Share your content to express yourself and connect with others.
-
+- 
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to ArkaSphere, please follow these guidelines:
