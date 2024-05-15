@@ -2,7 +2,14 @@
 /node_modules
 
 # Our frontend which will be published in a later repository  
-/frontend
+/profile
+/user
+/network
+/admin
+
+# Sensitive Information Will not be published.
+/frontend/javascript
+/frontend/javascript/sensitive
 
 # This handles secure stuff that we wont disclose
 /src/proprietary
