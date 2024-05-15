@@ -1,7 +1,15 @@
-
+# Node Modules
 /node_modules
+
+# Our frontend which will be published in a later repository  
 /frontend
+
+# This handles secure stuff that we wont disclose
 /src/proprietary
+
+# The ENV 
 .env
+
+# Temporarily files
 /temp
 /temp/data
