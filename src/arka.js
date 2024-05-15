@@ -1,32 +1,27 @@
 const dotenv = require('dotenv');
 dotenv.config({ path: '../.env' });
-const { app } = require('./app.js');
 const port = 3000 || process.env.PORT;
 
+// Try to load Database
+try {
+    const database = require('./database.js');
+    database().then(() => {
+        const { app } = require('./app.js');
 
-const mysql = require("mysql");
+        app.use((req, res) => {
+            res.status(404);
+            res.send('<h1>Error 404 page not found</h1>')
+        });
 
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'arkasphere',
-    password: '',
-    database: 'arkasphere',
-});
-
-db.connect((error) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("Connected to Mysql")
-    }
-});
+        app.listen(port, () => {
+            console.log(`App is listening on port ${port}`);
 
 
-app.use((req, res) => {
-    res.status(404);
-    res.send('<h1>Error 404 page not found</h1>')
-});
+        });
+    });
+} catch (error) {
+    console.error("Error loading database module: ", error);
+    // Handle the error gracefully, or just continue without it.
+}
 
-app.listen(port, () => {
-    console.log(`App is listening on port ${port}`);
-});
+// Make sure APP loads after database
