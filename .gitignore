@@ -5,11 +5,12 @@
 /profile
 /user
 /network
-/admin
 
 # Sensitive Information Will not be published.
 /frontend/javascript
 /frontend/javascript/sensitive
+/admin
+
 
 # This handles secure stuff that we wont disclose
 /src/proprietary
