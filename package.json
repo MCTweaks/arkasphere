@@ -4,14 +4,15 @@
   "description": "ArkaSphere is an open-source project providing the codebase for a dynamic digital space where users can gather, interact, and communicate.",
   "main": "ark.js",
   "scripts": {
-    "dev": "nodemon src/ark.js",
-    "start": "node src/ark.js"
+    "dev": "nodemon src/arka.js",
+    "start": "node src/arka.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mysql": "^2.18.1",
     "socket.io": "^4.7.5"
   },
   "devDependencies": {
