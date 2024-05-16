@@ -73,7 +73,7 @@ body {
   position: fixed;
   z-index: 5;
   font-family: "Minecraft";
-  letter-spacing: 8px;
+  letter-spacing: 7px;
 }
 
 .login-box {
@@ -145,6 +145,8 @@ body {
   cursor: pointer;
   width: 100%;
   padding-top: 12px;
+  text-decoration: none;
+  color: #edeffd;
 }
 
 .register:hover {
@@ -152,6 +154,7 @@ body {
   border-color: 2px solid white;
   border: 2px solid #eee;
   border-style: none;
+  color: #f7edfd;
 }
 
 .login-Form #username:hover,
@@ -175,13 +178,13 @@ body {
 
 /* Media */
 
-@media (width >= 500px) {
+@media (min-width: 500px) {
   body {
     padding: 0;
   }
   .login-box {
     margin: 0;
     width: 400px;
-    max-width: 400px;
+    max-width: 390px;
   }
 }
