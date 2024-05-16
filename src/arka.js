@@ -8,10 +8,10 @@ try {
     database().then(() => {
         const { app } = require('./app.js');
 
-        app.use((req, res) => {
-            res.status(404);
-            res.send('<h1>Error 404 page not found</h1>')
-        });
+        // app.use((req, res) => {
+        //     res.status(404);
+        //     res.send('<h1>Error 404 page not found</h1>')
+        // });
 
         app.listen(port, () => {
             console.log(`App is listening on port ${port}`);
