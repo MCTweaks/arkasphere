@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 // The Proprietary module is not required.
 try {
-    const proprietary = require('./com.arkasphere/Main.js');
+    const proprietary = require('./net.hetmastertje/Main.js');
     proprietary(app);
 } catch (error) {
     console.error("Error loading proprietary module:", error);
