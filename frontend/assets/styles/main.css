@@ -21,14 +21,19 @@ body {
 }
 
 .ArkaSphere h6 {
-  color: rgba(0, 0, 0, 0.38);
+  margin: 0px;
   font-weight: 800;
   font-size: 1.2rem;
   color: #edeffd;
 
   border-style: none;
-  position: fixed;
+  /* position: fixed; */
   z-index: 5;
   font-family: "Minecraft";
-  letter-spacing: 7px;
+  letter-spacing: 6px;
+}
+
+.header {
+  background-color: #161c27;
+  padding: 10px;
 }
