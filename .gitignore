@@ -13,6 +13,8 @@
 
 # This handles secure stuff that we wont disclose
 /src/proprietary
+/com.arkasphere
+/src/com.arkasphere
 
 # The ENV 
 .env
