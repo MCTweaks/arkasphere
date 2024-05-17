@@ -15,26 +15,54 @@
 
     <div class="header-Container">
         <header>
+            <!-- Site Name -->
             <div class="ArkaSphere">
                 <h6>Arka Sphere</h6>
             </div>
+            <!-- Navigation -->
             <nav>
                 <ul class="nav_links">
-                    <li><a href="#">Services </a></li>
-                    <li><a href="#">Projects </a></li>
-                    <li><a href="#">About </a></li>
+                    <!-- Real time Messaging system using something like socket.io -->
+                    <li><a href="#">Inbox</a></li>
                 </ul>
             </nav>
-            <a href="#" class="cta"><button>Contact</button></a>
+            <nav>
+                <!-- Middle stuff -->
+                <ul class="nav_links">
+                    <li><a href="#">For you </a></li>
+                    <li><a href="#">Following </a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="nav_links">
+                    <!-- Make a search System -->
+                    <li><a href="#">Search </a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta"><button id="Gkk1G"></button> <button id="Gkk2G"></button></a>
         </header>
     </div>
 
-    <!-- <div class="header">
-        <div class="ArkaSphere">
-            <h6>Arka Sphere</h6>
-        </div>
-    </div> -->
+    <script>
+        const gkk1G = document.getElementById("Gkk1G");
 
+        let UDT_serseialized = sessionStorage.getItem("Arka_UDT");
+
+        if (UDT_serseialized) {
+            try {
+                let UDT_deserialized = JSON.parse(UDT_serseialized);
+
+                if (UDT_deserialized && typeof UDT_deserialized.name === 'string') {
+                    gkk1G.innerHTML = UDT_deserialized.name;
+                } else {
+                    console.log("UDT does not have property called name");
+                }
+
+            } catch (error) {
+                console.log(error);
+            }
+        }
+    </script>
 </body>
 
 </html>
