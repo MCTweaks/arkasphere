@@ -1,4 +1,4 @@
-import { Utilites } from '../frontend/net.hetmastertje/Utilites/Utilites.js'
+import { Utilites } from '../../frontend/net.hetmastertje/Utilites/Utilites.js'
 
 document.addEventListener("DOMContentLoaded", function () {
     const textBox = document.getElementById("Information");
