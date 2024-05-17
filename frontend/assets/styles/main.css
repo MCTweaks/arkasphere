@@ -11,7 +11,7 @@
 html,
 body {
   height: 99%;
-  background-color: #131314;
+  background-color: #232323;
 }
 
 .ArkaSphere {
@@ -36,6 +36,6 @@ body {
 }
 
 .header {
-  background-color: #161c27;
+  background-color: #161616;
   padding: 10px;
 }
