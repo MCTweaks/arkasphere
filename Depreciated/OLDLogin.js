@@ -37,26 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (response.ok) {
                 const data = await response.json();
-                const data_status = data.status;
                 const data_href = data.href;
-                const data_token = data.token;
-                const data_instance = data.instanceToken;
-                const data_UUID = data.UUID;
-
-                const sessionToken = data.sessionToken
-                const sessionID = data.sessionID
-
-                sessionStorage.setItem('SessionToken', sessionToken);
-                sessionStorage.setItem('SessionID', sessionID);
-
-                // expire cookies in 30 days
-                let date = new Date();
-                date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
-                let expires = date.toUTCString();
-
-                document.cookie = `UUID=${data_UUID}; expires=${expires};`
-                document.cookie = `InstanceToken=${data_instance}; expires=${expires};`;
-                // IMPORTANT!!!!!!!!!!! change this to use Secure cookie
 
                 logging_in(data_href);
             } else {
