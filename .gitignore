@@ -15,6 +15,7 @@
 /src/proprietary
 /com.arkasphere
 /src/com.arkasphere
+/src/net.hetmastertje
 
 # The ENV 
 .env
