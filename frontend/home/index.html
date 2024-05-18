@@ -39,12 +39,25 @@
                     <li><a href="#">Search </a></li>
                 </ul>
             </nav>
-            <a href="#" class="cta"><button id="Gkk1G"></button> <button id="Gkk2G"></button></a>
+            <div class="button-container">
+                <button id="Gkk1sG" data-tooltip="Quick Logout">
+                    <img src="../assets/images/power_settings_new_24dp_FILL0_wght400_GRAD0_opsz24.png">
+                </button>
+                <button id="Gkk2sG" data-tooltip="Notifications">
+                    <img src="../assets/images/notifications_24dp_FILL0_wght400_GRAD0_opsz24.png">
+                </button>
+                <button id="Gkk3sG" data-tooltip="Account">
+                    <img src="../assets/images/account_circle_24dp_FILL0_wght400_GRAD0_opsz24.png">
+                </button>
+
+            </div>
+            <!-- <div class="button-container"><button id="Gkk1G"></button> <button id="Gkk2G"></button></div> -->
         </header>
     </div>
 
     <script>
         const gkk1G = document.getElementById("Gkk1G");
+        const gkk2G = document.getElementById("Gkk2G");
 
         let UDT_serseialized = sessionStorage.getItem("Arka_UDT");
 
@@ -54,6 +67,7 @@
 
                 if (UDT_deserialized && typeof UDT_deserialized.name === 'string') {
                     gkk1G.innerHTML = UDT_deserialized.name;
+                    gkk2G.innerHTML = UDT_deserialized.name;
                 } else {
                     console.log("UDT does not have property called name");
                 }

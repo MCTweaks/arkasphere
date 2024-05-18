@@ -19,6 +19,7 @@ body {
   align-items: flex-start; /* Vertically center the child */
   display: flex;
   padding: 0;
+  cursor: pointer;
 }
 
 .ArkaSphere h6 {
