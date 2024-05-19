@@ -2,6 +2,9 @@ const dotenv = require('dotenv');
 dotenv.config({ path: '../.env' });
 const port = 3000 || process.env.PORT;
 
+const logger = require("./com.arkasphere/utilites/logger.js");
+const log = new logger();
+
 // Try to load Database
 try {
     const database = require('./database.js');
@@ -14,7 +17,7 @@ try {
         // });
 
         app.listen(port, () => {
-            console.log(`App is listening on port ${port}`);
+            log.special(`App is listening on port ${port}`)
 
 
         });
