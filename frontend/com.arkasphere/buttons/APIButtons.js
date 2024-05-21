@@ -2,10 +2,26 @@ import { ButtonListener } from '../utilites/ButtonListener.js';
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttonListener = new ButtonListener('Gkk1sG', {
-        click: () => {
+        click: (event) => {
+            event.preventDefault();
 
-            console.log("Sending message to secure Server as API system")
-
+            const APIRequest = new APIRequest
         },
     });
 });
+
+
+//  Usage
+// document.addEventListener("DOMContentLoaded", function () {
+//     const buttonListener = new ButtonListener('Gkk1sG', {
+//         click: () => {
+//             alert('Button clicked!');
+//         },
+//         mouseover: () => {
+//             console.log('Mouse over button');
+//         },
+//         mouseout: () => {
+//             console.log('Mouse out of button');
+//         }
+//     });
+// });
